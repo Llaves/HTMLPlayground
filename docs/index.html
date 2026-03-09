@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My GitHub Page</title>
+
+  <style>
+    /* Graph paper background */
+    body
+    {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+
+      background-color: #ffffff;
+
+      /* blue graph-paper lines */
+      /* graph paper grid */
+      background-image:
+        /* fine grid */
+        linear-gradient(rgba(40, 120, 255, 0.25) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(40, 120, 255, 0.25) 1px, transparent 1px),
+        /* major grid every 5 squares */
+        linear-gradient(rgba(40, 120, 255, 0.45) 2px, transparent 2px),
+        linear-gradient(90deg, rgba(40, 120, 255, 0.45) 2px, transparent 2px);
+
+      background-size:
+        25px 25px,
+        25px 25px,
+        125px 125px,
+        125px 125px;
+    }
+
+    /* Title */
+    .title
+    {
+      font-size: 48px;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 40px;
+      color: rgb(10, 10, 10);
+      letter-spacing: 2px;
+    }
+
+    /* Header level 1 */
+    .header1
+    {
+      font-size: 28px;
+      font-weight: 600;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    /* Header level 2 */
+    .header2
+    {
+      font-size: 22px;
+      font-weight: 600;
+      margin-top: 20px;
+    }
+
+    /* Body text container */
+    .content
+    {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+
+      background: rgba(255, 255, 255, 0.75);
+
+      border-radius: 10px;
+
+      line-height: 1.6;
+
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .centered-image
+    {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+
+    .caption
+    {
+      text-align: center;
+      font-size: 12pt;
+      color: #000000;
+      margin-top: 5px;
+    }
+
+    .bodytext
+    {
+      font-size: 14pt;
+    }
+
+    .whitespace
+    {
+      height: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="title">
+    Welcome to the HTMLPlayground
+  </div>
+  <div class="content">
+    <div class="bodytext">
+      This repo contains a variety of web pages that I’ve written, mostly in collaboration with one or more LLMs,
+      especially Claude. There’s no rhyme or reason behind these pages — each reflects something that struck me as interesting.
+    </div>
+  </div>
+
+
+  <div class="content">
+    <div class="header1">
+      <a href="../CountrySizeComparison.html">How Big is a Country?</a>
+    </div>
+
+     <img class = "centered-image" src="CountryCompare2.png" alt="Compare by area">
+    <div class="caption">Comparison by area
+    </div>
+
+      <img class = "centered-image" src="CountryCompare1.png" alt="Compare by population">
+    <div class="caption">Comparison by population
+    </div>
+    <div class="whitespace"></div>
+    <div class="bodytext">
+      I was listening to a podcast and a comparison was made about the relative size of a couple of countries.
+      I wasn’t very familiar with the countries, so I was a little surprised by the comparison.
+      This led me to wondering about other country-country comparisons, and that started the development of this web page.
+      Once I had it running, I thought that area is only one property to compare, so I added population.
+      Over time I’ll probably add an economic dimension.
+    </div>
+  </div>
+
+</body>
+
+</html>
